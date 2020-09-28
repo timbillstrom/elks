@@ -1,4 +1,4 @@
-package main
+package elks
 
 import (
 	"encoding/json"
