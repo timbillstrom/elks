@@ -3,7 +3,7 @@
 
 ## Future features
 
-- [x] Send SMS
-- [ ] Send MMS
-- [ ] Place Automated Phone Calls
-- [ ] `// TODO…`
+- [x]   Send SMS
+- [ ]   Send MMS
+- [ ]   Place Automated Phone Calls
+- [ ]   `// TODO…`
