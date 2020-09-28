@@ -11,4 +11,29 @@
 
 ## Usage
 
-`go get -u github.com/timbillstrom/elks`
+* Get module: `go get -u github.com/timbillstrom/elks`
+
+#### Send SMS
+
+```go
+package main
+
+import (
+    "os"
+    "github.com/timbillstrom/elks"
+)
+
+func main() {
+    client := elks.NewClient(
+        os.Getenv("46_USERNAME"),
+        os.Getenv("46_SECRET"),
+        false, // No message will be sent when this is true.
+    )
+    res, err := client.SendMessage(&elks.SMS{
+        From:    "Moose",
+        To:      "+46…",
+        Message: "Är du ute och älgar?",
+    })
+    ...
+}
+```
